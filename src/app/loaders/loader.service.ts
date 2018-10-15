@@ -68,7 +68,10 @@ export class LoaderService {
   }
 
   hideAll() {
-    document.querySelectorAll('.su_loaders').forEach((ele) => { ele.classList.remove('active') });
+    let loaders=document.querySelectorAll('.su_loaders');
+    for(let i=0;i<loaders.length;i++){
+     loaders[i].classList.remove('active');
+    }
     Object.keys(this.counter).forEach(key => { this.counter[key] = 0 });
   }
 
