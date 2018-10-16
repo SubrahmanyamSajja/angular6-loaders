@@ -4,7 +4,6 @@ import { LoaderComponent } from './loader/loader.component';
 import { LoaderService, LoaderInterceptor } from './loader.service';
 import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
-
 @NgModule({
   imports: [
     CommonModule,

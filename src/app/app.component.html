@@ -1,4 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <a routerLink="/dashboard">Dashboard</a> | 
+  <a routerLink="/aboutus">About us</a> </div>
 <div class="ct-box" style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -13,3 +16,5 @@
 
 <button (click)="showLoader('.ct-box','uni')">show Loader</button>
 <button (click)="hideLoader()">hide Loader</button>
+
+<router-outlet></router-outlet>
